@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💌 Share Your Thoughts | Moments of Vishnupriya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/feedback.css"> <!-- extra styling for form -->
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="nav-wrap">
+    <nav>
+      <div class="border"></div>
+      <div class="navbar">
+        <div class="menu">
+          <a href="index.html" class="nav-btn white-btn">🏠 Home</a>
+          <a href="daily-blossoms.html" class="nav-btn white-btn">📔 My Vacation Blooms</a>
+          
+          <details class="dropdown">
+            <summary>🌸 Daily Blossoms</summary>
+            <ul class="dropdown-menu">
+              <li><a href="day1.html">🌸 Blooming Dawn</a></li>
+              <li><a href="day2.html">🌅 Golden Skies</a></li>
+              <li><a href="day3.html">🍂 Autumn Whispers</a></li>
+              <li><a href="day4.html">🌿 Lavender Calm</a></li>
+              <li><a href="day5.html">🌧 Raindrop Songs</a></li>
+              <li><a href="day6.html">🌻 Sunflower Glow</a></li>
+              <li><a href="day7.html">🌙 Moonlit Memories</a></li>
+            </ul>
+          </details>
+        </div>
+        <div class="brand">Moments of Vishnupriya</div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Page Heading -->
+  <header class="page-heading">
+    <h1>💌 Share Your Thoughts</h1>
+    <p class="sub-text">Your kind words and reflections mean the world to me ✨</p>
+  </header>
+
+  <!-- Feedback Form -->
+  <section class="hero">
+    <article class="welcome card-form">
+      <form action="vishnupriyakj738@gmail.com" method="POST" enctype="text/plain">
+        
+        <label for="name">🌸 Your Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+        <label for="email">📧 Your Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">💭 Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write something beautiful..." required></textarea>
+
+        <button type="submit" class="nav-btn white-btn">✨ Send Reaction</button>
+      </form>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>Made with ♡ by Vishnupriya</div>
+      <div>© <span id="year"></span> Moments of Vishnupriya</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
